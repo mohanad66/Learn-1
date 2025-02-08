@@ -4,7 +4,7 @@ function Favorites(){
     const {favorites} = useMovieContext()
     if(favorites)
     {
-        return <div className="movie-grid">
+        return <div className="movies-grid">
             {favorites.map((movie) =>(<MovieCard movie={movie} key={movie.id}/>))}
         </div>
     }
